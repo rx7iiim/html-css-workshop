@@ -1,0 +1,97 @@
+/* General Page Styling */
+#body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+#header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#title {
+  margin: 0;
+}
+
+#intro {
+  margin-top: 10px;
+}
+
+/* About Section */
+#about {
+  padding: 20px;
+}
+
+/* Activities Section */
+#activities {
+  padding: 20px;
+}
+
+#activity-list {
+  list-style-type: square;
+}
+
+/* Events Section */
+#events {
+  padding: 20px;
+}
+
+#event-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#event-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+#event-table td,
+#event-table th {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Join Section */
+#join {
+  padding: 20px;
+}
+
+#join-form {
+  margin-top: 10px;
+}
+
+#submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section */
+#footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+#email-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#email-link:hover {
+  text-decoration: underline;
+}

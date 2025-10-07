@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Elements — Examples</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML elements — explained with examples</h1>
+      <p class="lead">
+        Small, focused examples that demonstrate what an HTML element is, how
+        tags and attributes work, and common element types.
+      </p>
+    </header>
+
+    <section>
+      <h2>What is an element?</h2>
+      <p>
+        An HTML element is the building block of a web page. An element usually
+        consists of a start tag, content, and an end tag:
+      </p>
+      <div class="two-up">
+        <div>
+          <div class="example">
+            <strong>Rendered</strong>
+            <div class="render">
+              <h2>Welcome!</h2>
+              <p>
+                This is a simple paragraph inside an &lt;h2&gt; and &lt;p&gt;
+                element.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div><</div>
+      </div>
+      <p>
+        Start tag: &lt;h2&gt;, end tag: &lt;/h2&gt;. The tag name (h2) is the
+        element's type.
+      </p>
+    </section>
+
+    <section>
+      <h2>Tags vs elements vs attributes</h2>
+      <p>
+        A tag is the markup you write (for example &lt;a&gt;). An element is the
+        combination of the start tag, content, and end tag. Attributes give
+        additional information about an element (for example
+        <code>href</code> on an anchor).
+      </p>
+      <div class="example">
+        <strong>Example:</strong>
+        <pre><code>&lt;a href="https://example.com" target="_blank"&gt;Visit example.com&lt;/a&gt;</code></pre>
+        <p class="lead">Rendered:</p>
+        <div class="render">
+          <a href="https://example.com" target="_blank">Visit example.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Self-closing (void) elements</h2>
+      <p>
+        Some elements don't have content or an end tag. They're called void
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="utf-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+            <title>HTML elements — simple</title>
+          </head>
+          <body>
+            <!-- Page title -->
+            <h1>HTML elements — simple examples</h1>
+
+            <!-- Headings: h1..h6 -->
+            <h2>What is an element?</h2>
+            <!-- An element usually has a start tag, content, and an end tag -->
+            <p>
+              An element is a piece of the document defined by tags, for
+              example:
+            </p>
+            <h3>Example heading</h3>
+            <p>This is a paragraph.</p>
+
+            <!-- Anchor (link). href is a basic attribute giving the target URL -->
+            <h2>Links</h2>
+            <p>
+              <!-- anchor tag with href -->
+              <a href="#">This is a link</a>
+            </p>
+
+            <!-- Images (void element). src and alt are common attributes -->
+            <h2>Images and void elements</h2>
+            <p>
+              <!-- img is self-closing in HTML (no end tag) -->
+              <img src="" alt="description" />
+            </p>
+            <p>Line break example:<br />Text after a &lt;br&gt; tag.</p>
+
+            <!-- Lists -->
+            <h2>Lists</h2>
+            <p>Unordered list:</p>
+            <ul>
+              <li>Item one</li>
+              <li>Item two</li>
+            </ul>
+
+            <!-- Forms and inputs (basic) -->
+            <h2>Forms</h2>
+            <p>Simple form with label and input:</p>
+            <form>
+              <!-- wrap input in label to associate it -->
+              <label>Full name: <input type="text" name="name" /></label>
+              <br />
+              <label>Email: <input type="email" name="email" /></label>
+              <br />
+              <button type="submit">Send</button>
+            </form>
+
+            <!-- Preformatted text and code examples -->
+            <h2>Code example</h2>
+            <pre><code>&lt;h1&gt;Title&lt;/h1&gt;
+        &lt;p&gt;A paragraph.&lt;/p&gt;</code></pre>
+
+            <!-- Semantic grouping (simple mentions only) -->
+            <h2>Semantic tags</h2>
+            <p>
+              Examples of semantic tags: &lt;header&gt;, &lt;nav&gt;,
+              &lt;main&gt;, &lt;article&gt;, &lt;footer&gt;.
+            </p>
+
+            <!-- Footer note -->
+            <footer>
+              <p>
+                Keep HTML simple: use tags to structure content. Comments
+                explain each tag.
+              </p>
+            </footer>
+          </body>
+        </html>
+      </p>
+
+      <p>Form elements collect user input. Each input should have a label.</p>
+    </section>
+  </body>
+</html>

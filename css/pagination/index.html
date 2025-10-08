@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination Practice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f4f4f4;
+      }
+
+      .pagination {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .pagination li {
+        margin: 0;
+      }
+
+      .pagination a {
+        display: block;
+        padding: 10px 16px;
+        text-decoration: none;
+        color: #333;
+        border-right: 1px solid #ddd;
+        transition: background 0.3s;
+      }
+
+      .pagination a:hover {
+        background: #007bff;
+        color: white;
+      }
+
+      .pagination .active a {
+        background: #007bff;
+        color: white;
+      }
+
+      .pagination li:last-child a {
+        border-right: none;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .pagination li:first-child a {
+        border-radius: 10px 0 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="pagination">
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#">1</a></li>
+      <li class="active"><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+  </body>
+</html>

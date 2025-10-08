@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Just for visibility */
+      div,
+      p {
+        border: 1px dashed #aaa;
+        padding: 8px;
+        margin: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Combinators</h1>
+
+    <div class="parent">
+      <p>Child paragraph (direct inside .parent)</p>
+      <div class="child">
+        <p>Nested paragraph (inside .child)</p>
+      </div>
+    </div>
+
+    <p>Paragraph right after .parent</p>
+    <p>Another paragraph after .parent</p>
+
+    <p>Try styling elements using combinators in <code>style.css</code>.</p>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Simple visuals so students notice the changes */
+      body {
+        height: 1500px; /* For scroll testing with fixed/sticky */
+      }
+
+      .container {
+        position: relative;
+        background-color: #f4f4f4;
+        padding: 20px;
+        height: 300px;
+        border: 2px dashed #ccc;
+        margin: 20px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        border-radius: 8px;
+      }
+
+      .red {
+        background-color: crimson;
+      }
+
+      .blue {
+        background-color: royalblue;
+      }
+
+      .green {
+        background-color: seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Position</h1>
+
+    <div class="container">
+      <div class="box red">Box 1</div>
+      <div class="box blue">Box 2</div>
+      <div class="box green">Box 3</div>
+    </div>
+
+    <p>
+      Try setting different <strong>position</strong> values
+      (<code>static</code>, <code>relative</code>, <code>absolute</code>,
+      <code>fixed</code>, <code>sticky</code>) in <code>style.css</code> and
+      observe how each box moves.
+    </p>
+  </body>
+</html>

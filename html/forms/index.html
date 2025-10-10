@@ -1,0 +1,132 @@
+<!-- Forms in HTML -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forms</title>
+</head>
+<body>
+	<!-- Forms in HTML5 -->
+	<!-- The action tag is refering to a example PHP document 
+		 which would send the data to the PHP file -->
+	<form action="action_page.php" method="POST">
+		<!-- For and ID makes it so when you click on the label it selects the box, also makes it easy
+			 for peope with screen readers. Name is like a variable. Placeholder puts ghost text. -->
+		
+		<!-- Text is our first name's and last name's type of input. 
+		     the for attribute refers to our id attribute, making it so when you 
+		     click on the text it opens the text input.
+			 Required attribute means you have to fill it in to submit. -->
+		<div>
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname" placeholder="John" required>
+		</div>
+
+		<br>
+
+		<div>
+			<label for="lname">Last name:</label>
+			<input type="text" id="lname" name="lname" placeholder="Smith" required>
+		</div>
+
+		<br>
+
+		<!-- Password is our password's type of input.
+			 Minlength is the minimum length for our password-->
+		<div>
+			<label for="pass">Password:</label>
+			<input type="password" id="pass" name="pass" minlength="4" required>
+		</div>
+
+		<br>
+
+		<!-- Email is our emails type of input. -->
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="john_smith@gmail.com">
+		</div>
+
+		<br>
+
+		<!-- Tel is our phone numbers type of input. -->
+		<div>
+			<label for="phone">Phone #:</label>
+			<input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+		</div>
+
+		<br>
+
+		<!-- Date is our birth date's type of input. -->
+		<div>
+			<label for="bdate">Birthdate:</label>
+			<input type="date" id="bdate" name="bdate" placeholder="11-03-1977">
+		</div>
+
+		<br>
+
+		<!-- Number is our quantity's type of input. 
+			 Min is the minimum quantity and max is the maximum quantity. 
+			 Value is the default. -->
+		<div>
+			<label for="quantity">Quantity:</label>
+			<input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+		</div>
+
+		<br>
+
+		<!-- Radio is our title's type of input.
+			 Value tag specificies the value of an input. -->
+		<div>
+			<label for="title">Title:</label>
+
+			<label for="Mr.">Mr.</label>
+			<input type="radio" id="Mr." name="title" value="Mr.">
+			
+			<label for="Mrs.">Mrs.</label>
+			<input type="radio" id="Mrs." name="title" value="Mrs.">
+
+			<label for="PhD.">PhD.</label>
+			<input type="radio" id="PhD." name="title" value="PhD.">
+		</div>
+
+		<br>
+
+		<!--  Select tags allow us to select our option/s.
+			  Option tags are what we can select. -->
+		<div>
+			<label for="payment">Payment:</label>
+			<select id="payment" name="payment">
+				<option value="Visa">Visa</option>
+				<option value="Mastercard">Mastercard</option>
+				<option value="Paypal">Paypal</option>
+			</select>
+		</div>
+
+		<br>
+
+		<!-- Checkbox is our type of input for our Subscribe label. -->
+		<div>
+			<label for="subscribe">Subscribe:</label>
+			<input type="checkbox" id="subscribe" name="subscribe">
+		</div>
+
+		<br>
+
+		<!-- Resets form. -->
+		<div>
+			<input type="reset">
+		</div>
+
+		<br>
+
+		<!-- Submits form. -->
+		<div>
+			<input type="submit">
+		</div>
+
+	</form>
+
+</body>
+</html>

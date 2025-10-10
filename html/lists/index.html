@@ -1,0 +1,55 @@
+<!-- Lists in HTML -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lists</title>
+</head>
+<body>
+	<!-- 
+		Unordered list, uses dot points.
+	 -->
+
+	<h4>Unordered List</h4>
+		<!-- Ul tags = unordered list. -->
+		<ul>
+			<!-- Li tags = list elements -->
+			<li>Pizza dough</li>
+			<li>Tomato sauce</li>
+			<li>Mozerella</li>
+			<li>Toppings
+			<!-- Nested list in a list, creates a sub list. -->
+				<ul>
+					<li>Salami</li>
+					<li>Mushrooms</li>
+					<li>Peppers</li>
+				</ul>
+			</li>
+		</ul>
+
+
+	<!-- Ordered list, by default orders with numbers (we can change this with the type attribute.) -->
+	<h4>Ordered List</h4>
+	<!-- Type changes how the list is ordered, example: A means alphabetically. -->
+		<ol type="A">
+			<li>Eat breakfast</li>
+			<li>Take a shower</li>
+			<li>Leave for work</li>
+		</ol>
+
+	<!-- Description list, has a term and a descripton. -->
+	<h4>Description List</h4>
+	<!-- Dt is the term and dd is the description. -->
+		<dl>
+			<dt>HTML</dt>
+			<dd>This adds structure to a webpage.</dd>
+			<dt>CSS</dt>
+			<dd>This adds style to a webpage.</dd>
+			<dt>JavaScript</dt>
+			<dd>This adds functionality to a webpage.</dd>
+		</dl>
+
+</body>
+</html>
